@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Assigment</title>
+</head>
+<body>
+    <header class="header">
+        <div><h2>Moqups</h2></div>
+        <div class="nav">
+            <a href="#banner">Home</a>
+            <a href="#package">Our Package</a>
+            <a href="#closing">Call Us</a>
+        </div>
+    </header>
+    <div class="home">
+        <div class="title"><h3>Top Rated E-Groceries Shop in <br/>Indonesian</h3>
+        <p>Every Day with best ingredients</p></div>
+        <div id="banner" class="banner">
+            <div class="picture-section">
+              <div class="image">
+                <img src="/img/1.jpg" alt="fruits" class="slide">
+                <img src="/img/2.jpg" alt="fruits" class="slide">
+                <img src="/img/3.jpg" alt="fruits" class="slide">
+                <p>"Setiap hari beli sayur buah yang fresh disini"</p>
+
+            </div>
+                <div class="author">
+                    <i class='bx bx-user'></i>
+                    <div class="author-info">
+                        <p>Florence Hughes</p>
+                        <p>Ibu Rumah Tangga, 28</p>
+                    </div>
+                </div>
+                <div class="garis"></div>
+                <div class="deskripsi">
+                    <p>Buah yang disediakan di sini dijamin kesegarannya dan juga kebersihannya. Tidak hanya buah dan sayuran segar yang tersedia, Benefit lainnya yang bisa di dapat dengan membeli buah dan sayur disini ialah : </p>
+                    <div class="benefit">
+                        <h3>1</h3>
+                        <p>Pengantaran yang instan.</p>
+                    </div>
+                    <div class="benefit">
+                        <h3>2</h3>
+                        <p>Buah dan Sayuran yang segar.</p>
+                    </div>
+                    <div class="benefit">
+                        <h3>3</h3>
+                        <p>Dijamin kebersihannya dalam pengiriman.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+             <div class="contact-us">   <h3>Contact Us</h3>
+                <p>Sales akan menghubungin anda 1x24 jam setelah data dikirim</p></div>
+                <form class="form" onsubmit="return validateForm()" action="">
+                    <p>Your Name :<p/>
+                    <input type="text" id="name" placeholder="First and last name">
+                    <p>Email Address : </p>
+                    <input type="email" id="email" placeholder="example@email.com">
+                    <p>What are you interest in ?</p>
+                   <select name="Select Option" id="option">
+                    <option value="Sports">Sports</option>
+                    <option value="Read">Read</option>
+                    <option value="Coding">Coding</option>
+                   </select>
+                    <input class="button" type="submit" value="SEND">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="package" class="package">
+        <div class="title"><h3>Our Package</h3></div>
+        <div class="services">
+            <div class="service">
+                <i class='bx bx-bulb' ></i>
+                <div class="deskripsi">
+                    <h5>Fresh Vegetables</h5>
+                    <p>Sayuran segar langsung dari sumber pertanian terbaik</p>
+                </div>
+            </div>
+            <div class="service">
+                <i class='bx bx-bulb' ></i>
+                <div class="deskripsi">
+                    <h5>Fresh Fruit</h5>
+                    <p>Buah dengan kualitas terbaik dari local atau import dan harga yang menarik</p>
+                </div>
+            </div>
+            <div class="service">
+                <i class='bx bx-bulb' ></i>
+                <div class="deskripsi">
+                    <h5>Instant Delivery</h5>
+                    <p>Dikirim instan oleh kurir yang telah di training dengan SOP untuk menjaga kondisi belanja kamu</p>
+                </div>
+            </div>
+        </div>
+        <div class="garis"></div>
+        <div class="services">
+            <div class="service">
+                <i class='bx bxs-star' ></i>                
+                <div class="deskripsi">
+                    <h5>Kitchen Ingredient</h5>
+                    <p>Bumbu dapur lengkap untuk keperluan memasak kamu</p>
+                </div>
+            </div>
+            <div class="service">
+                <i class='bx bxs-star' ></i>                
+                <div class="deskripsi">
+                    <h5>Kitchen Set</h5>
+                    <p>Segala jenis alat masak untuk membantu kamu memasak</p>
+                </div>
+            </div>
+            <div class="service">
+                <i class='bx bxs-star' ></i>                
+                <div class="deskripsi">
+                    <h5>Bunding Set</h5>
+                    <p>Bingung masak apa ? sudah tersedia paket untuk kamu masak di dapur mu</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="closing" class="closing">
+        <div class="closing-text">
+            <h3>Don't Forget To Buy Our Product</h3>
+            <p>Dengan membeli product kami, anda mendukung usaha untuk mendistribusikan sayuran dan buah buahan yang segar dan berkualitas</p>
+            <input class="button" type="button" value="CALL TO ACTION">
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="footer-text">
+            <h2>Moqups</h2>
+            <span><a href="">Terms of Service</a> <a href="">Privacy Policy</a></span>
+            <p>&copy; 2019 Moqups</p>
+        </div>
+    </div>
+</body>
+<script>
+function validateForm() {
+  let name = document.getElementById('name').value;
+  let email = document.getElementById('email').value;
+
+  if (name === '') {
+    alert('Nama harus di isi !!');
+    return false;
+  }
+
+  if (email === '') {
+    alert('Email harus di isi !!');
+    return false;
+  }
+  alert("Data telah di validasi !!")
+  return true;
+}
+
+//auto slide
+var slides = document.getElementsByClassName("slide");
+var currentSlide = 0;
+
+function showSlide(n) {
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[n].style.display = "block";
+}
+
+function nextSlide() {
+  currentSlide++;
+  if (currentSlide >= slides.length) {
+    currentSlide = 0;
+  }
+  showSlide(currentSlide);
+}
+
+// Ganti slide setiap 2 detik (2000 milidetik)
+setInterval(nextSlide, 3000);
+
+// Tampilkan slide pertama saat halaman dimuat
+showSlide(currentSlide);
+</script>
+</html>
